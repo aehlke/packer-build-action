@@ -10,6 +10,7 @@ LABEL "homepage" = "https://github.com/diegoaceneves/packer-build-action"
 LABEL "maintainer" = "Diego Neves <diego@diegoneves.eti.br>"
 
 RUN apk -u add ansible
+RUN apk -u add docker
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
